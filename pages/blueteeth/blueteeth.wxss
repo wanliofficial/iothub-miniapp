@@ -1,0 +1,26 @@
+.current-device {
+    color: #ffffff!important;
+    background: #62B9F4!important;
+}
+
+.device-card {
+    position: relative;
+    padding: 30rpx 0rpx;
+    border-top: 1rpx solid #fafafa;
+}
+
+.device-card:first-child {
+    margin-top: 20rpx;
+}
+
+.device-card:last-child {
+    border-bottom: 1rpx solid #fafafa;
+}
+
+.device-card .device-btn {
+    top: 30rpx;
+    right: 0rpx;
+    color: #ffffff!important;
+    position: absolute;
+    padding: 16rpx 30rpx;
+}

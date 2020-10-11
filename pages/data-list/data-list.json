@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "数据列表",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "e-title-view": "/components//title-view/title-view"
+    }
+}

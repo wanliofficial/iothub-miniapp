@@ -1,0 +1,38 @@
+<view class="ruff-font-size-28 ruff-title" style="text-align: center;">
+    物联网平台
+</view>
+<view class="ruff-font-size-16 ruff-title ruff-slight-color" style="margin: 0 25px;text-align: center;">
+    该小程序背后使用了诸多的开源技术和产品，因此才能够快速开发应用。
+</view>
+<view class="ruff-font-size-20 ruff-title" style="text-align: center;">
+    平台后端技术栈
+</view>
+<view class="brand-container">
+    <view class="brand-item">
+        <image src="../../images/emqx.png" mode="aspectFit"></image>
+        <view class="ruff-font-size-16" style="text-align: center;">EMQX Broker</view>
+    </view>
+    <view class="brand-item">
+        <image src="../../images/nodejs.jpg" mode="aspectFit"></image>
+        <view class="ruff-font-size-16" style="text-align: center;">Node.js</view>
+    </view>
+    <view class="brand-item padding-both-sides">
+        <image src="../../images/mongodb.jpg" mode="aspectFit"></image>
+        <view class="ruff-font-size-16" style="text-align: center;">MongoDB</view>
+    </view>
+    <view class="brand-item">
+        <image src="../../images/influxdb.jpg" mode="aspectFit"></image>
+        <view class="ruff-font-size-16" style="text-align: center;">InfluxDB</view>
+    </view>
+    <view class="brand-item padding-both-sides">
+        <image src="../../images/rabbitmq.jpg" mode="aspectFit"></image>
+        <view class="ruff-font-size-16" style="text-align: center;">RabbitMQ</view>
+    </view>
+    <view class="brand-item">
+        <image src="../../images/redis.jpg" mode="aspectFit"></image>
+        <view class="ruff-font-size-16" style="text-align: center;">Redis</view>
+    </view>
+</view>
+<view class="ruff-font-size-16 ruff-title ruff-slight-color" style="margin: 20px 20px;text-align: center;">
+    致敬开源
+</view>

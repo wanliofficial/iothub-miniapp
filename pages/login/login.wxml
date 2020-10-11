@@ -1,0 +1,3 @@
+<view class="login-wrap">
+    <button class="login-btn" bindgetuserinfo="getUserInfo" open-type="getUserInfo">微信授权登录</button>
+</view>

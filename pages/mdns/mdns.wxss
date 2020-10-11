@@ -1,0 +1,23 @@
+.mdns-list {
+    background-color: white;
+    margin: 10rpx 0;
+    padding: 20rpx;
+}
+
+.row {
+    width: 670rpx;
+    margin-top: 10rpx;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20rpx;
+}
+
+.dividing-line {
+    margin: 30rpx auto;
+    text-align: center;
+    padding-bottom: 6rpx;
+    text-decoration: underline;
+}

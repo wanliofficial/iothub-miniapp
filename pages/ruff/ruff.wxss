@@ -1,0 +1,172 @@
+.card {
+    padding: 20rpx;
+    font-size: 30rpx;
+}
+.cardTitle {
+    padding: 10rpx;
+}
+.ivestment-c {
+    position: relative;
+    box-sizing:border-box;
+    background-color: #fff;
+    padding: 20rpx 0;
+    width: 100%;
+    max-height: 500rpx;
+    overflow-y: auto;
+    height: auto;
+}
+.ivestment-i {
+    position: relative;  
+}
+.invest-l {
+    width: 100%;  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;  
+    position: relative;
+}
+.demo-flex-1 {
+    flex:1;
+    margin-left: 40rpx;
+}
+.invest-b {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 40rpx;
+    height: 100%;
+    text-align: center;
+}
+.invest-line::before {
+    position: absolute;
+    display: inline-block;
+    top:50%;
+    left: 50%;
+    content: " ";
+    margin-top: -9rpx;
+    margin-left: -9rpx;
+    width:18rpx;
+    height:18rpx;
+    background:#398af4;
+    border-radius:50%;
+    z-index: 10;
+}
+.invest-line::after {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 50%;
+    content: " ";
+    margin-left: -1rpx;
+    width: 2rpx;
+    height: 100%;
+    background-color: #398af4;
+    z-index: 5;
+}
+.invest-line2::after {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 50%;
+    content: " ";  
+    width: 2rpx;
+    margin-left: -1rpx;
+    height: 100%;
+    background-color: #398af4;
+    z-index: 5;
+}
+.ivestment-i:nth-child(1) .invest-line::after {
+    top: 36rpx;
+}
+.showBox {
+    transition: all .6s ease;
+    height: auto;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.hideBox {
+    transition: all .6s ease;
+    height: 0;
+    padding: 0;
+}
+.textBox {
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+.rotateUp {
+    transition: all .6s ease;
+    transform:rotate(0deg);
+}
+.rotateDown {
+    transition: all .6s ease;
+    transform:rotate(180deg);
+}
+.rotateUp1 {
+    transition: all .6s ease;
+    transform:rotate(90deg);
+}
+.rotateDown1 {
+    transition: all .6s ease;
+    transform:rotate(270deg);
+}
+
+.ruff-logo {
+    width: 400rpx;
+    height: auto;
+    display: block;
+    margin: 0rpx auto;
+}
+
+.ruff-line {
+    text-indent: 2em;
+    margin: 10px auto;
+}
+
+.course-year {
+    margin: 20rpx auto;
+}
+
+.header {
+    padding: 200rpx;
+    background-size: 50% 50%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: url('https://statics.wanliwuhan.com/images/ruff/iot-index-banner.jpg');
+}
+
+.product-img {
+    width: 300rpx;
+    height: auto;
+    display: block;
+    margin: 20rpx auto;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand-container .brand-item {
+    width: 50%;
+    flex: 0 0 50%;
+    margin: 40rpx 0rpx;
+    box-sizing: border-box;
+}
+
+.brand-container .brand-item:nth-child(odd) {
+    padding-right: 0.5rpx;
+}
+
+.brand-container .brand-item:nth-child(even) {
+    padding-left: 0.5rpx;
+}
+
+.brand-container .brand-item image {
+    width: 100%;
+    height: 160rpx;
+}

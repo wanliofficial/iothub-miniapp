@@ -1,0 +1,95 @@
+/* pages/profile/profile.wxss */
+
+page {
+    background: #f1f1f1;
+}
+
+.ruff-header {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.ruff-header .header-bg {
+    width: 100%;
+}
+
+.ruff-header .ruff-info {
+    top: 40rpx;
+    left: 0rpx;
+    right: 0rpx;
+    position: absolute;
+}
+
+.ruff-header .ruff-info > view {
+    overflow: hidden;
+    width: 128rpx;
+    height: 128rpx;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 20rpx auto 20rpx auto;
+}
+
+.ruff-header .ruff-info .ruff-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.ruff-header .ruff-nickname {
+    width: 100rpx;
+    height: 30rpx;
+    position: relative;
+    margin: 0rpx auto;
+    text-align: center;
+}
+
+.ruff-service {
+    width: 94%;
+    background: #ffffff;
+    box-shadow: 0 0 10rpx 5rpx #f0f0f0;
+    border-radius: 10rpx;
+    margin: 20rpx auto;
+}
+
+.ruff-service .title {
+    font-size: 32rpx;
+    padding: 30rpx 20rpx;
+}
+
+.ruff-service .list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+.ruff-service .list .item {
+    padding: 40rpx 0;
+    width: 33.333333%;
+    flex: 0 0 33.333333%;
+    box-sizing: border-box;
+    border-top: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+}
+
+.ruff-service .list .item:nth-child(3n+3) {
+    border-right: none;
+    /*border-bottom: 1px solid #f0f0f0;*/
+}
+
+.ruff-service .list .item:last-child {
+    border-bottom: none;
+}
+
+.ruff-service .list .item image {
+    width: 72rpx;
+    height: 72rpx;
+}
+
+.ruff-service .list .item text {
+    font-size: 32rpx;
+}

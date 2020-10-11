@@ -1,0 +1,11 @@
+<block wx:if="{{ list.length > 0 }}">
+	<e-goods-list src='{{ item.picture }}' title='{{ item.name }}' theme='rounded' price="{{ item.status == 'active' ? '激活':'锁定' }}" wx:for="{{ list }}" wx:for-index="index" wx:for-item="item" wx:key="index" data-device="{{ item }}" bind:listtap="onListClick">
+		<e-base-button slot='center' text='{{ item.device_status.firmware_ver }}' theme='hollow' width='66' height='30' textSize='22' color='#FE9036' radius='30'></e-base-button>
+		<text slot='price' style='margin: 16rpx 0 0 30rpx; font-size: 20rpx; color: #999;'>{{item.product_name}}/{{ item.device_name }}</text>
+	</e-goods-list>
+</block>
+<block wx:else>
+	<view class="ruff-tips-text">
+		{{text}}
+	</view>
+</block>

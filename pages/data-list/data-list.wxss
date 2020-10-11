@@ -1,0 +1,236 @@
+/* pages/test/test.wxss */
+
+rich-text {
+    width: 700rpx;
+    padding: 25rpx 0;
+}
+
+.rich-text-wrp {
+    padding: 0 25rpx;
+    background-color: #fff;
+}
+
+.page-section {
+    width: 100%;
+    margin-bottom: 60rpx;
+}
+
+.page-section:last-child {
+    margin-bottom: 0;
+}
+
+.page-section-title {
+    font-size: 28rpx;
+    color: #999999;
+    margin-bottom: 10rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+.ruff-h {
+    font-size: 1.2em;
+    line-height: 1em;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.ruff-p {
+    display: block;
+    margin: 0.5em 0;
+    font-size: 28rpx;
+    line-height: 1.5em;
+}
+
+.ruff-a {
+    color: #00b1b5;
+    text-decoration: none;
+}
+
+.ruff-doc-title {
+    margin: 1em 0;
+    display: block;
+    font-family: Lato, "Work Sans", "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft Yahei", "WenQuanYi Micro Hei", Arial, Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: #00b1b5;
+    transition: .2s;
+}
+
+.ruff-footer {
+    display: flex;
+    border-top: 1rpx solid #ddd;
+    justify-content: center;
+    margin: 20rpx 0rpx;
+    padding: 20rpx 0rpx;
+}
+
+.ruff-footer-time {
+    flex: 1;
+    color: #ccc;
+    align-self: center;
+    text-align: center;
+    font-size: .8em;
+}
+
+.ruff-footer-prev,
+.ruff-footer-next {
+    flex: 0 0 20%;
+    width: 20%;
+    color: #00b1b5;
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: Lato, "Work Sans", "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft Yahei", "WenQuanYi Micro Hei", Arial, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.ruff-footer-prev {
+    text-align: center;
+}
+
+.ruff-footer-next {
+    text-align: center;
+}
+
+.ruff-label {
+    border-radius: 10rpx;
+    padding: 4rpx 16rpx;
+    font-size: 20rpx;
+    background: #eee;
+    color: #4d4d4c;
+}
+
+.ruff-btn {
+    display: inline-block;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 41px;
+    width: 120px;
+    height: 41px;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px 0 #e6e6e6;
+    margin-right: 20px;
+}
+
+.ruff-btn.m {
+    color: #1da8ad;
+    background-color: rgba(208, 245, 237, .4);
+}
+
+.ruff-btn.r {
+    color: #ec8675;
+    background-color: rgba(236, 134, 117, .1);
+}
+
+.ruff-btn.y {
+    color: #eaaf0a;
+    background-color: rgba(253, 190, 16, .1);
+}
+
+.ruff-btn.plain {
+    width: 124px;
+    height: 34px;
+    color: #00b1b5;
+    border-radius: 10px;
+    border: solid 1px #00b1b5;
+    background-color: #fff;
+}
+
+.ruff-highlight {
+    margin: 1em 0;
+    display: block;
+    padding: 20rpx 30rpx;
+    overflow: auto;
+    background: #eee;
+    color: #4d4d4c;
+    font-size: 28rpx;
+    font-weight: normal;
+    line-height: 2em;
+}
+
+.ruff-blockquote {
+    margin: 1em 0;
+    line-height: 2em;
+    color: #323737;
+    padding: 0 20px;
+    font-size: 28rpx;
+    position: relative;
+    border: 1px solid #e3e3e3;
+    border-left: 5px solid #ddd;
+}
+
+.ruff-table {
+    margin: 10rpx;
+    max-width: 100%;
+    font-size: 30rpx;
+    border: 1px solid #e3e3e3;
+    /* border-collapse: separate; */
+    border-collapse: collapse;
+}
+
+.ruff-table-thead {
+    display: table-header-group;
+}
+
+.ruff-table-tbody {
+    display: table-row-group;
+}
+
+.ruff-table-tr {
+    display: table-row;
+}
+
+.ruff-table-th {
+    border: 0;
+    display: table-cell;
+    padding: 5px 15px;
+    font-weight: 700;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.ruff-table-td {
+    border: 0;
+    display: table-cell;
+    padding: 5px 15px;
+    text-align: left;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.ruff-table-tr:nth-child(2n) {
+    background: #eee;
+}
+
+.ruff-table-img {
+    width: 100rpx;
+    display: block;
+}
+
+.scroll-view-title {
+    width: 100%;
+    white-space: nowrap;
+    font-size: 34rpx;
+    text-align: center;
+}
+.scroll-view-title>label {
+    color: white;
+    padding: 10rpx 0;
+    display: inline-block;
+    background-color: #00b1b5;
+}
+.scroll-view-item {
+    width: 100%;
+    white-space: nowrap;
+    font-size: 32rpx;
+    text-align: center;
+}
+.scroll-view-item>text {
+    display: inline-block;
+}
+.scroll-view-item:nth-child(odd)>text {
+    background-color: #f8f8f8;
+}

@@ -1,0 +1,236 @@
+/**app.wxss**/
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.ruff-container {
+    width: 100%;
+    height: 100%;
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+
+.we-btn {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 30rpx;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 2.55555556;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    background-color: #1AAD19;
+}
+
+.we-btn:after {
+    top: 0;
+    left: 0;
+    content: " ";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.ruff-color-m {
+    color: #81D8D0!important;
+}
+
+.ruff-color-b {
+    color: #62B9F4!important;
+}
+
+.ruff-color-o {
+    color: #FF865C!important;
+}
+
+.ruff-color-y {
+    color: #FFC82C!important;
+}
+
+.ruff-color-red {
+    color: #FF0033!important;
+}
+
+.ruff-section text {
+    color: #00b1b5;
+}
+
+.ruff-font-size-10 {
+    font-size: 20rpx;
+}
+
+.ruff-font-size-12 {
+    font-size: 24rpx;
+}
+
+.ruff-font-size-14 {
+    font-size: 28rpx;
+}
+
+.ruff-font-size-15 {
+    font-size: 30rpx;
+}
+
+.ruff-font-size-16 {
+    font-size: 32rpx;
+}
+
+.ruff-font-size-18 {
+    font-size: 36rpx;
+}
+
+.ruff-font-size-20 {
+    font-size: 40rpx;
+}
+
+.ruff-font-size-24 {
+    font-size: 48rpx;
+}
+
+.ruff-font-size-28 {
+    font-size: 56rpx;
+}
+
+.ruff-font-size-32 {
+    font-size: 64rpx;
+}
+
+.ruff-font-size-36 {
+    font-size: 72rpx;
+}
+
+.ruff-font-bold {
+    font-weight: bolder;
+}
+
+.ruff-bgcolor-w {
+    color: #62B9F4!important;
+    background-color: #ffffff;
+}
+
+.ruff-bgcolor-m {
+    color: #00b1b5!important;
+    background-color: #81D8D0;
+}
+
+.ruff-bgcolor-o {
+    color: #ca6924!important;
+    background-color: #F7865C;
+}
+
+.ruff-bgcolor-b {
+    color: #0099CC!important;
+    background-color: #62B9F4;
+}
+
+.ruff-bgcolor-y {
+    color: rgb(165, 122, 4)!important;
+    background-color: #FFC82C;
+}
+
+.ruff-button {
+    width: 80%;
+    box-sizing: content-box;
+    color: #000000;
+    padding: 24rpx auto!important;
+    text-align: center;
+    border-radius: 10rpx;
+    margin: 20rpx auto;
+}
+
+.ruff-button::after {
+    border: none;
+}
+
+.ruff-brand-gray {
+    width: 421rpx;
+    height: 298rpx;
+    display: block;
+    margin: 0rpx auto;
+    opacity: 0.3;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: rgb(204, 204, 204);
+}
+
+.ruff-input {
+    width: 90%;
+    height: 96rpx;
+    border-radius: 10rpx;
+    margin: 20rpx auto;
+    background: #ffffff;
+    padding: 0rpx 20rpx;
+    box-sizing: border-box;
+}
+
+.ruff-textarea {
+    width: 100%;
+    height: 200rpx;
+    padding: 20rpx;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 10rpx;
+    background: #FFFFFF;
+    border: 1rpx solid #62B9F4;
+}
+
+.ruff-notice {
+    width: 90%;
+    color: rgb(255, 187, 0);
+    padding: 20rpx;
+    margin: 20rpx auto;
+    background: rgba(252, 236, 194, 0.719);
+}
+
+.ruff-slight-color {
+    color: #cccccc!important;
+}
+
+.ruff-no-device {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ruff-img {
+    display: block;
+    width: 100%;
+}
+
+.ruff-title {
+    margin: 50rpx auto;
+    text-align: center;
+}
+
+.ruff-tips-text {
+    color: #ccc;
+    font-size: 30rpx;
+    text-align: center;
+    margin: 20rpx auto;
+}

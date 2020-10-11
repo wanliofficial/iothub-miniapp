@@ -1,0 +1,12 @@
+{
+    "navigationBarBackgroundColor": "#00b1b5",
+    "navigationBarTitleText": "设备详情",
+    "usingComponents": {
+        "modal": "/components/modal/modal",
+        "e-base-button": "/components/base-button/base-button",
+        "e-goods-list": "/components/goods-list/goods-list",
+        "e-tabs": "/components/tabs/tabs",
+        "color-picker": "/components/color-picker/color-picker",
+        "dashboard": "/components/dashboard/index"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "usingComponents": {},
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Ruff IOT",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+}

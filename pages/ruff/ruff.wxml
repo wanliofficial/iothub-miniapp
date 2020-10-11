@@ -1,0 +1,112 @@
+<view class="ruff-container">
+    <image class="ruff-logo" src="https://statics.wanliwuhan.com/images/ruff/ruff-01.jpg" mode="widthFix"></image>
+
+    <view class="ruff-font-size-28 ruff-title" style="text-align: center;">
+        让工厂快速实现数字化转型
+    </view>
+    <view class="ruff-font-size-20 ruff-title" style="text-align: center;">
+        设备宝 · 工业物联网时代的生产力工具
+    </view>
+    <view class="ruff-container">
+        <image class="product-img" src="https://statics.wanliwuhan.com/images/ruff/ruff-plant-insight.png" mode="widthFix"></image>
+        <view class="ruff-font-size-24 ruff-title" style="text-align: center;">设备宝</view>
+        <view class="ruff-font-size-20 ruff-title" style="text-align: center;">帮助工厂实现快速数字化转型，全面提升生产效率</view>
+        <view class="ruff-font-size-16 ruff-title ruff-slight-color" style="text-align: center;">Ruff Plant Insight 中文名“设备宝”，是由 Ruff 开发的一款工业物联网的生产力工具应用产品，旨在通过数字化及物联网技术提高工厂生产效率，让传统工厂快速联网，实现工厂数字化转型。</view>
+    </view>
+    <view class="ruff-container">
+        <image class="product-img" src="https://statics.wanliwuhan.com/images/ruff/ruff-gateway.png" mode="widthFix"></image>
+        <view class="ruff-font-size-24 ruff-title" style="text-align: center;">Ruff 智能网关</view>
+        <view class="ruff-font-size-20 ruff-title" style="text-align: center;">帮助企业提升生产管理洞察，让数据采集传输更稳定</view>
+        <view class="ruff-font-size-16 ruff-title ruff-slight-color" style="text-align: center;">Ruff Connector 中文名“ Ruff 智能网关”，是一款可以由软件定义的通用型工业物联网网关，其拥有丰富的工业驱动库，可以覆盖工业自动化、能源采集、光伏运维、智慧农业、智慧社区等多个场景进行部署。</view>
+    </view>
+    <view class="ruff-container">
+        <image class="product-img" src="https://statics.wanliwuhan.com/images/ruff/ruff-operate-system.png" mode="widthFix"></image>
+        <view class="ruff-font-size-24 ruff-title" style="text-align: center;">Ruff 物联网操作系统</view>
+        <view class="ruff-font-size-20 ruff-title" style="text-align: center;">帮助客户更快更便捷地利用物联网技术，让物联网应用开发更简单</view>
+        <view class="ruff-font-size-16 ruff-title ruff-slight-color" style="text-align: center;">Ruff 是一个物联网操作系统，支持 JavaScript 开发应用，为软件开发者提供开放、高效、敏捷的物联网应用开发平台，让物联网应用开发更简单。</view>
+    </view>
+    <view class="ruff-font-size-20 ruff-title" style="text-align: center;">
+        合作伙伴
+    </view>
+    <view class="brand-container">
+        <view class="brand-item">
+            <image src="https://statics.wanliwuhan.com/images/20190116/intel.png" mode="aspectFit"></image>
+            <view class="ruff-font-size-16" style="text-align: center;">英特尔</view>
+        </view>
+        <view class="brand-item">
+            <image src="https://statics.wanliwuhan.com/images/20190116/ge.png" mode="aspectFit"></image>
+            <view class="ruff-font-size-16" style="text-align: center;">通用电气</view>
+        </view>
+        <view class="brand-item">
+            <image src="https://statics.wanliwuhan.com/images/20190116/microsoft.png" mode="aspectFit"></image>
+            <view class="ruff-font-size-16" style="text-align: center;">微软</view>
+        </view>
+        <view class="brand-item">
+            <image src="https://statics.wanliwuhan.com/images/20190116/wpg.png" mode="aspectFit"></image>
+            <view class="ruff-font-size-16" style="text-align: center;">大联大</view>
+        </view>
+    </view>
+    <view class="ruff-font-size-20 ruff-title" style="text-align: center;">
+        服务客户
+    </view>
+    <view class="brand-container">
+        <view class="brand-item">
+            <image src="https://statics.wanliwuhan.com/images/20190116/ghlm.png" mode="aspectFit"></image>
+            <view class="ruff-font-size-16" style="text-align: center;">光合联盟</view>
+        </view>
+        <view class="brand-item">
+            <image src="https://statics.wanliwuhan.com/images/20190116/dianwuyou.png" mode="aspectFit"></image>
+            <view class="ruff-font-size-16" style="text-align: center;">电无忧</view>
+        </view>
+        <view class="brand-item">
+            <image src="https://statics.wanliwuhan.com/images/20190116/yalian.png" mode="aspectFit"></image>
+            <view class="ruff-font-size-16" style="text-align: center;">亚联</view>
+        </view>
+        <view class="brand-item">
+            <image src="https://statics.wanliwuhan.com/images/20190116/mgs.png" mode="aspectFit"></image>
+            <view class="ruff-font-size-16" style="text-align: center;">萌公社</view>
+        </view>
+        <view class="brand-item">
+            <image src="https://statics.wanliwuhan.com/images/20190116/sanyi.png" mode="aspectFit"></image>
+            <view class="ruff-font-size-16" style="text-align: center;">三一重工</view>
+        </view>
+    </view>
+
+    <view class="ruff-title ruff-font-size-24">想到就能做到·做到就能看到</view>
+    <view class="ruff-line ruff-font-size-15">Ruff 成立于2014年10月，致力于解决物联网应用开发及获取困难问题，拥有支持 JavaScript 开发应用的 Ruff OS 物联网操作系统 、针对工业领域的生产力工具应用产品 Ruff Plant Insight （中文名：设备宝）以及工业智能网关等产品。</view>
+    <view class="ruff-title ruff-font-size-24">目标与愿景</view>
+    <view class="ruff-line ruff-font-size-15">让物联网应用开发更简单，让工厂数字化转型更快速。物联网改变世界，Ruff改变物联网。</view>
+    <view class="ruff-title ruff-font-size-24">Ruff 大事记</view>
+
+    <view class="card">
+        <view class="cardTitle" bindtap="changeUpDown">
+            🌍🌎🌏
+            <text class="iconfont icon-down {{showUp?'rotateUp':'rotateDown'}}"></text>
+            <view class="textBox {{showUp?'rotateUp1':'rotateDown1'}}">
+                <text>{{'👈'}}</text>
+            </view>
+        </view>
+        <view class="ivestment-c {{showUp?'hideBox':'showBox'}}">
+            <view class="ivestment-i" wx:for="{{dataList}}" wx:key="index" wx:for-item="item" wx:for-index="index">
+            <view class="invest-l">
+                <view class="invest-b invest-line">
+                    <text decode="{{true}}" space="{{true}}">&nbsp;</text>
+                </view>
+                <view class="demo-flex-1 font-28r color-3" style="line-height: 64rpx;">{{item.startTime}}</view>
+            </view>
+            <view class="invest-l">
+                <view class="invest-b invest-line2">
+                    <text decode="{{true}}" space="{{true}}">&nbsp;</text>
+                </view>
+                <view class="demo-flex-1">
+                    <view class="font-12 color-6 awardUnit" style="line-height: 52rpx;margin-top: 16rpx;margin-bottom: 16rpx;">{{item.experience}}</view>
+                </view>
+            </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="ruff-font-size-15 ruff-color-b" style="margin: 30rpx 0rpx;">
+        * Ruff,Ruff Plant Insight,设备宝,Ruff OS,ruff.io,ruffcorp.com,naochao.org 等均是上海南潮信息科技有限公司注册商标
+    </view>
+</view>

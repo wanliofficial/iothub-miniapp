@@ -1,0 +1,56 @@
+<wxs module="tools"></wxs>
+<view class="container">
+  <view class="ruff-section ruff-font-size-32">
+    当前网络类型：
+    <text class="ruff-font-bold">{{networkType}}</text>
+    <view class="wifi-info" wx:if="{{wifiInfo}}">
+      <view class="ruff-font-size-16" style="color: #cccccc;">当前WIFI信息：</view>
+      <view class="ruff-font-size-18">
+        <image src="{{'https://statics.wanliwuhan.com/svgs/20190112/wifi-sign-'+  wifiInfo.level +'.svg'}}"></image>
+        <text>{{wifiInfo.SSID}}</text>
+        <text>{{wifiInfo.secure ? '安全':'不安全'}}</text>
+      </view>
+      <view class="slight ruff-font-size-14">路由器MAC：{{wifiInfo.BSSID}}</view>
+    </view>
+  </view>
+  <view class="ruff-scroll-container">
+    <scroll-view scroll-y class="ruff-scroll">
+      <block wx:if="{{wifiList.length}}">
+        <view class="scroll-view-item" wx:for="{{wifiList}}" wx:for-item="wifi" wx:for-index="index" wx:key="{{index}}">
+          <view class="ruff-font-size-18">
+            <image src="{{'https://statics.wanliwuhan.com/svgs/20190112/wifi-sign-'+  wifi.level +'.svg'}}"></image>
+            <text>{{wifi.SSID}}</text>
+            <text>{{wifi.secure ? '安全':'不安全'}}</text>
+          </view>
+          <view class="slight">MAC[{{wifi.BSSID}}]</view>
+          <image bindtap="selectWifi" data-ssid="{{wifi.SSID}}" data-bssid="{{wifi.BSSID}}" src="https://statics.wanliwuhan.com/svgs/20190112/ruff-right-in.svg"></image>
+        </view>
+      </block>
+      <view wx:else class="ruff-no-device">
+        <view>
+          <image class="ruff-brand-gray" src="https://statics.wanliwuhan.com/images/ruff/ruff-02.jpg"></image>
+        </view>
+        <text class="ruff-font-size-16" style="color: #cccccc;">{{wifiTips}}</text>
+      </view>
+    </scroll-view>
+  </view>
+  <view>
+    <button class="ruff-button ruff-bgcolor-m ruff-font-size-18" bindtap="start">搜索附近WIFI</button>
+    <button wx:if="{{isStopWifiBtnShow}}" class="ruff-button ruff-bgcolor-m ruff-font-size-18" bindtap="stop">
+      断开WIFI
+    </button>
+  </view>
+</view>
+<modal isShow="{{isModalShow}}">
+  <view style="width: 90%;">
+    <view wx:if="{{wifiError}}" class="ruff-tips">
+      <icon type="{{iconType}}" size="40" />
+      <text class="{{iconType}}">{{wifiError}}</text>
+    </view>
+    <view wx:else class="form-section">
+      <input class="ruff-input ruff-font-size-18" type="text" placeholder="请输入wifi账号" bindinput="accountInput" value="{{ssid}}" />
+      <input class="ruff-input ruff-font-size-18" type="text" placeholder="请输入wifi密码" bindinput="passwordInput" value="{{password}}" />
+      <button class="ruff-button ruff-bgcolor-m ruff-font-size-18" bindtap="connect">开始连接</button>
+    </view>
+  </view>
+</modal>

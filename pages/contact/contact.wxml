@@ -1,0 +1,35 @@
+<view class="ruff-container">
+    <image class="ruff-logo" src="{{imgList[0]}}" mode="widthFix"></image>
+    <view class="ruff-title ruff-line ruff-font-size-20">微信平台</view>
+    <official-account bindload="wxAccountLoad" binderror="wxAccountError"></official-account>
+    <view class="wechat-public">
+        <view class="item">
+            <image src="{{imgList[1]}}" data-url="{{imgList[1]}}" bindtap="viewImg" mode="widthFix" />
+            <text class="ruff-font-size-15">微信公众号：Ruff</text>
+        </view>
+        <view class="item">
+            <image src="{{imgList[2]}}" data-url="{{imgList[2]}}" bindtap="viewImg" mode="widthFix" />
+            <text class="ruff-font-size-15">微信服务号：Ruff</text>
+        </view>
+    </view>
+    <view class="ruff-title ruff-line ruff-font-size-20">微博</view>
+    <view class="weibo-section">
+        <image src="{{imgList[3]}}" data-url="{{imgList[3]}}" bindtap="viewImg" mode="widthFix" style="width: 100%;" />
+    </view>
+    <view class="ruff-title ruff-line ruff-font-size-20">市场合作</view>
+    <view class="ruff-title ruff-line ruff-font-size-15">021-80392574-872</view>
+    <view class="ruff-title ruff-line ruff-font-size-20">地址</view>
+    <view class="ruff-title ruff-line ruff-font-size-15">上海浦东新区纳贤路800号科海大厦1栋B座7楼 Ruff</view>
+    <map
+        id="map"
+        longitude="121.611291"
+        latitude="31.184171"
+        scale="14"
+        bindcontroltap="controltap"
+        markers="{{markers}}"
+        bindmarkertap="markertap"
+        bindregionchange="regionchange"
+        show-location
+        style="width: 100%; height: 300px;"
+    ></map>
+</view>

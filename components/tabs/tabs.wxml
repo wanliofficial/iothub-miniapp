@@ -1,0 +1,8 @@
+<scroll-view class='component cus' scroll-x="{{ isScroll }}" style='{{ scrollStyle }}'>
+  <view class='content'>
+    <view class='item' wx:for="{{ items }}" wx:key="index" data-index="{{ index }}" style='min-width: {{ itemWidth }}rpx; height: {{ height }}rpx' catchtap='onItemTap'>
+      <text class='text' style='color: {{ mSelected == index ? selectColor : textColor }};font-size: {{ textSize }}rpx;'>{{ item }}</text>
+    </view>
+    <view class='bottom-bar {{ theme == "smallBar" ? "small" : "" }}' style='background-color: {{ selectColor }}; left: {{ left }}px; right: {{ right }}px; bottom: {{ bottom }}rpx; transition: {{ transition }}; border-shadow: 0rpx 0rpx 10rpx 0rpx {{ selectColor }};'></view>
+  </view>
+</scroll-view>

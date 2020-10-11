@@ -1,0 +1,62 @@
+<view class="ruff-container">
+    <view class="list-container">
+        <view class="list-item phone">
+            <image src="https://statics.wanliwuhan.com/svgs/20190111/phone.svg" mode="widthFix"></image>
+            <view class="content">
+                <view class="index-title ruff-font-size-14">此设备品牌：{{systemInfo.brand}}</view>
+                <view class="index-title ruff-font-size-14">此设备型号：{{systemInfo.model}}</view>
+                <view class="index-title ruff-font-size-14">此设备操作系统：{{systemInfo.system}}</view>
+                <view class="index-title ruff-font-size-14">此设备客户端平台：{{systemInfo.platform}}</view>
+            </view>
+        </view>
+        <view class="list-item acculerator">
+            <image src="https://statics.wanliwuhan.com/svgs/20190111/accelerator.svg" mode="widthFix"></image>
+            <view class="content">
+                <view class="index-title ruff-color-m ruff-font-size-14"><text>X轴</text>{{xAxis}}</view>
+                <view class="index-title ruff-color-m ruff-font-size-14"><text>Y轴</text>{{yAxis}}</view>
+                <view class="index-title ruff-color-m ruff-font-size-14"><text>Z轴</text>{{zAxis}}</view>
+                <view class="btn-container">
+                    <view class="btn m" bindtap="startAcculerator">开始监听</view><view class="btn m" bindtap="stopAcculerator">结束监听</view>
+                </view>
+            </view>
+        </view>
+        <view class="list-item compass">
+            <image src="https://statics.wanliwuhan.com/svgs/20190111/compass.svg" mode="widthFix"></image>
+            <view class="content">
+                <view class="index-title ruff-color-b ruff-font-size-14"><text>方向</text>{{direction}}</view>
+                <view class="btn-container">
+                    <view class="btn b" bindtap="startCompass">开始监听</view><view class="btn b" bindtap="stopCompass">结束监听</view>
+                </view>
+            </view>
+        </view>
+        <view class="list-item gyro">
+            <image src="https://statics.wanliwuhan.com/svgs/20190111/gyro.svg" mode="widthFix"></image>
+            <view class="content">
+                <view class="index-title ruff-color-y ruff-font-size-14"><text>X轴角速度</text>{{xAngularVelocity}}</view>
+                <view class="index-title ruff-color-y ruff-font-size-14"><text>Y轴角速度</text>{{yAngularVelocity}}</view>
+                <view class="index-title ruff-color-y ruff-font-size-14"><text>Z轴角速度</text>{{zAngularVelocity}}</view>
+                <view class="btn-container">
+                    <view class="btn y" bindtap="startGyro">开始监听</view><view class="btn y" bindtap="stopGyro">结束监听</view>
+                </view>
+            </view>
+        </view>
+        <view class="list-item gps">
+            <image src="https://statics.wanliwuhan.com/svgs/20190111/gps.svg" mode="widthFix"></image>
+            <view class="content">
+                <view class="index-title ruff-color-o ruff-font-size-14"><text>经度</text>{{longitude}} <text>纬度</text>{{latitude}} <text>高度</text>{{altitude}} <text>速度</text>{{speed}}</view>
+                <view class="btn-container">
+                    <view class="btn o" bindtap="openCoordinate">打开当前坐标</view><view class="btn o" bindtap="chooseCoordinate">选取坐标</view>
+                </view>
+            </view>
+        </view>
+        <view class="list-item shock">
+            <image src="https://statics.wanliwuhan.com/svgs/20190111/shock.svg" mode="widthFix"></image>
+            <view class="content">
+                <view class="index-title ruff-font-size-14">无数据显示，只能操作</view>
+                <view class="btn-container">
+                    <view class="btn w" bindtap="longShock">长震动</view><view class="btn w" bindtap="shortShock">短震动</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

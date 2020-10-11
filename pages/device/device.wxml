@@ -1,0 +1,143 @@
+<e-tabs items='{{ list }}' selectColor='#34c388' theme='smallBar' catchitemtap='onTabsClick' />
+
+<view wx:if="{{ list.length > 0 }}">
+	<block wx:if="{{ 0 === currentIndex }}">
+		<e-goods-list src='{{ device.picture }}' title='{{ device.name }}' theme='rounded' price='{{ device.device_name }}'>
+			<e-base-button slot='center' text='{{ device.device_status.firmware_ver }}' theme='hollow' width='66' height='30' textSize='22' color='#FE9036' radius='30'></e-base-button>
+			<view slot="bottom" bind:tap="onQueryData" class="query-btn">查询数据</view>
+			<text slot='price' style='margin: 16rpx 0 0 30rpx; font-size: 20rpx; color: #999;'>{{ device.location.address }}</text>
+		</e-goods-list>
+		<swiper class="swiper-container" vertical="true" autoplay="true" circular="true" interval="2000">
+			<block wx:for="{{msgList}}" wx:for-index="index" wx:key="index">
+				<swiper-item>
+					<view class="swiper-item">公告：{{item.title}}</view>
+				</swiper-item>
+			</block>
+		</swiper>
+		<view class="qiun-charts" >
+			<canvas canvas-id="canvaGauge5" id="canvaGauge5" class="charts"></canvas>
+		</view>
+		<view class="qiun-charts" >
+			<canvas canvas-id="canvaGauge10" id="canvaGauge10" class="charts"></canvas>
+		</view>
+		<view class="qiun-charts" >
+			<canvas canvas-id="canvaGauge15" id="canvaGauge15" class="charts"></canvas>
+		</view>
+		<view class="device-info ruff-font-size-16">
+			<view>设备SN：{{ device.device_name }}</view>
+			<view>设备名称：{{ device.name }}</view>
+			<view>设备IP：{{list[0].ip}}</view>
+			<view>设备所在地：{{ device.location.address }}</view>
+		</view>
+		<view class="device-info ruff-font-size-16">
+			<view>总内存：{{ device.operation.totalmem }}字节</view>
+			<view>空闲内存：{{ device.operation.freemem }}字节</view>
+			<view>运行时间：{{ device.operation.uptime }}秒</view>
+		</view>
+		<view class="device-info ruff-font-size-16">
+			<view>主机名：{{ device.information.hostname }}</view>
+			<view>平台：{{ device.information.platform }}</view>
+			<view>发行版本：{{ device.information.release }}</view>
+			<view>架构：{{ device.information.arch }}</view>
+			<view>处理器：{{ device.information.cpus[0].model }}</view>
+			<view>运行时间：{{ device.information.uptime }}</view>
+		</view>
+		<view class="device-info ruff-font-size-16">
+			<view>wlan0：{{ device.network.network['wlan0'][0].ip }}-{{ device.network.network['wlan0'][0].family }}</view>
+			<view>wlan0：{{ device.network.network['wlan0'][1].ip }}-{{ device.network.network['wlan0'][1].family }}</view>
+			<view>wlan0-1：{{ device.network.network['wlan0-1'][0].ip }}-{{ device.network.network['wlan0-1'][0].family }}</view>
+			<view>wlan0-1：{{ device.network.network['wlan0-1'][1].ip }}-{{ device.network.network['wlan0-1'][1].family }}</view>
+		</view>
+		<view class="qiun-charts" >
+			<canvas canvas-id="canvasLineA" id="canvasLineA" class="charts"></canvas>
+		</view>
+		<map id="map" longitude="{{ location.longitude }}" latitude="{{ location.latitude }}" scale="1" markers="{{ markers }}" show-location style="width: 100%; height: 360rpx;"></map>
+	</block>
+	<block wx:if="{{ 1 === currentIndex }}">
+		<view style="font-size: 32rpx;margin: 20rpx;color: #34c388;">LCD屏幕内容</view>
+		<view class="screen-wrap">你输入的数字、字母将会打印在LCD屏幕上，字符串长度不超过30，超过长度将不会被打印。再次打印内容需要先清空屏幕。当前内容为：{{ lcdTextValue }}</view>
+		<input type="text" class="input-cls" bindinput="bindKeyInput" bindblur="bindKeyInput" placeholder="输入非中文字符，长度最大为30" />
+		<view class="btn-wrap">
+			<view bind:tap="bindClearScreen">清空屏幕</view>
+			<view bind:tap="bindPrintScreen">打印屏幕</view>
+		</view>
+	</block>
+	<block wx:if="{{ 2 === currentIndex }}">
+		<view class="lux-wrap">{{ illuminance }}<text>Lux</text></view>
+	</block>
+	<block wx:if="{{ 3 === currentIndex }}">
+		<view class="switch-d-wrap {{ dSwitchActive == 1 ? 'switch-d-wrap-ck':'' }}">
+			<view class="switch-d {{ dSwitchActive == 1 ? 'switch-d-ck':'' }}" bind:tap="onDSwitchChange"></view>
+		</view>
+		
+	</block>
+	<block wx:if="{{ 4 === currentIndex }}">
+		<color-picker class="color-picker" colorData="{{colorData}}" rpxRatio="{{rpxRatio}}" bind:changecolor="onColorChange"></color-picker>
+		<view class="switch-wrap">
+			<label class="switch" bind:tap="onSwitchChange">
+				<label class="switch-inner {{ switchActive == 1 ? 'checked': '' }}"><text class="switch-dot {{ switchActive == 1 ? 'checked': '' }}"></text></label>
+			</label>
+		</view>
+	</block>
+	<block wx:if="{{ 5 === currentIndex }}">
+		<view class="num-wrap">
+			<view>{{ temperature }}<text>℃</text></view>
+			<view>{{ humidity }}<text>%RH</text></view>
+		</view>
+	</block>
+	<block wx:if="{{ 6 === currentIndex }}">
+		<view class="sound-wrap">
+			<view class="loader">
+				<text></text>
+				<text></text>
+				<text></text>
+				<text></text>
+				<text></text>
+				<text></text>
+				<text></text>
+				<text></text>
+				<text></text>
+				<text></text>
+				<text></text>
+				<text></text>
+				<text></text>
+				<text></text>
+				<text></text>
+			</view>
+			<view>{{ soundText }}</view>
+		</view>
+	</block>
+	<block wx:if="{{ 7 === currentIndex }}">
+		<view class="main flex {{ fSwitchActive == 1 ? 'm-night':'' }}">
+			<view class="switch_m flex {{ fSwitchActive == 1 ? 's-night':'' }}">
+				<view class="switch__g flex {{ fSwitchActive == 1 ? 'g-night':'' }}">
+					<view class="switch__button flex {{ fSwitchActive == 1 ? 'b-night':'' }}" bind:tap="onFSwitchChange">
+						<view class="switch__tap {{ fSwitchActive == 1 ? 't-night':'' }}"></view>
+						<view class="switch__led flex {{ fSwitchActive == 1 ? 'l-night':'' }}">
+							<view class="switch__led-i {{ fSwitchActive == 1 ? 'li-night':'' }}"></view>
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="shadow {{ fSwitchActive == 1 ? 'sh-night':'' }}"></view>
+		</view>
+	</block>
+	<block wx:if="{{ 8 === currentIndex }}">
+		<view class="loader-container">
+			<text class="rectangle-1"></text>
+			<text class="rectangle-2"></text>
+			<text class="rectangle-3"></text>
+			<text class="rectangle-4"></text>
+			<text class="rectangle-5"></text>
+			<text class="rectangle-6"></text>
+			<text class="rectangle-5"></text>
+			<text class="rectangle-4"></text>
+			<text class="rectangle-3"></text>
+			<text class="rectangle-2"></text>
+			<text class="rectangle-1"></text>
+		</view>
+	</block>
+</view>
+<view wx:else class="ruff-tips-text">
+	{{text}}
+</view>

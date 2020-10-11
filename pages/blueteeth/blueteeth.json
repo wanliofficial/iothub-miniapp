@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#62B9F4",
+    "navigationBarTitleText": "连接蓝牙",
+    "usingComponents": {
+        "modal": "../../components/modal/modal"
+    }
+}

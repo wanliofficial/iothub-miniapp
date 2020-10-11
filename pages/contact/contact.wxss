@@ -1,0 +1,33 @@
+.ruff-logo {
+    width: 400rpx;
+    height: auto;
+    display: block;
+    margin: 0rpx auto;
+}
+
+.ruff-line {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.wechat-public {
+    display: flex;
+    padding: 0px 10rx;
+}
+
+.wechat-public .item {
+    width: 50%;
+    flex: 0 0 50%;
+    text-align: center;
+    padding: 0px 10rpx;
+    box-sizing: border-box;
+}
+
+.wechat-public .item image {
+    width: 100%;
+    display: block;
+}
+
+.wechat-public .item text {
+    margin: 10px auto;
+}

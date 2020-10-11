@@ -1,0 +1,77 @@
+<!-- index.wxml -->
+<view class="container">
+    <view class="ruff-header">
+        <image class="header-bg" src="https://statics.wanliwuhan.com/images/20190103/FpNmzj6ou4JpeP6L8DBKakWaTvUQ.jpg" mode="widthFix"></image>
+        <view class="ruff-info">
+            <view>
+                <!-- <image bindtap="bindViewTap" class="ruff-avatar" src="https://statics.wanliwuhan.com/images/20190110/jimmyvan.jpg" mode="cover"></image> -->
+                <open-data type="userAvatarUrl"></open-data><view class='avatar-icon'/>
+            </view>
+            <open-data type="userNickName"></open-data>
+        </view>
+    </view>
+    <view class="ruff-service">
+        <view class="title">小程序服务</view>
+        <view class="list">
+            <navigator class="item" url="/pages/wifi/wifi">
+                <view>
+                    <image src="https://statics.wanliwuhan.com/svgs/20190111/ruff-wifi.svg"></image>
+                </view>
+                <text>连接WIFI</text>
+            </navigator>
+            <navigator class="item" url="/pages/blueteeth/blueteeth">
+                <view>
+                    <image src="https://statics.wanliwuhan.com/svgs/20190111/blueteeth.svg"></image>
+                </view>
+                <text>连接蓝牙</text>
+            </navigator>
+            <navigator class="item" url="/pages/nfc/nfc">
+                <view>
+                    <image src="https://statics.wanliwuhan.com/svgs/20190111/ruff-nfc.svg"></image>
+                </view>
+                <text>连接NFC</text>
+            </navigator>
+            <navigator class="item" url="/pages/mdns/mdns">
+                <view>
+                    <image src="https://statics.wanliwuhan.com/svgs/20190111/ruff-dns.svg"></image>
+                </view>
+                <text>连接mDNS</text>
+            </navigator>
+            <navigator class="item" url="/pages/sensor/sensor">
+                <view>
+                    <image src="https://statics.wanliwuhan.com/svgs/20190111/sensor.svg"></image>
+                </view>
+                <text>传感器</text>
+            </navigator>
+            <navigator class="item" url="/pages/iot/iot">
+                <view>
+                    <image src="https://statics.wanliwuhan.com/svgs/20190111/ruff-iot.svg"></image>
+                </view>
+                <text>物联网平台</text>
+            </navigator>
+        </view>
+    </view>
+    <view class="ruff-service">
+        <view class="title">RUFF专区</view>
+        <view class="list">
+            <navigator class="item" url="/pages/ruff/ruff">
+                <view>
+                    <image src="https://statics.wanliwuhan.com/svgs/20190111/ruff-info.svg"></image>
+                </view>
+                <text>关于Ruff</text>
+            </navigator>
+            <navigator class="item" url="/pages/contact/contact">
+                <view>
+                    <image src="https://statics.wanliwuhan.com/svgs/20190111/ruff-contact.svg"></image>
+                </view>
+                <text>联系Ruff</text>
+            </navigator>
+            <navigator class="item" url="/pages/buy/buy">
+                <view>
+                    <image src="https://statics.wanliwuhan.com/svgs/20190111/ruff-go.svg"></image>
+                </view>
+                <text>购买开发套件</text>
+            </navigator>
+        </view>
+    </view>
+</view>

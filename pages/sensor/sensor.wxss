@@ -1,0 +1,89 @@
+/* pages/sensor/sensor.wxss */
+
+.list-container {
+    
+}
+
+.list-container .acculerator {
+    background: #CCFFCC;
+}
+
+.list-container .list-item {
+    display: flex;
+    padding: 20rpx;
+    flex-direction: row;
+    margin: 20rpx 0rpx;
+    border-radius: 10rpx;
+}
+
+.list-container .phone {
+    background: #FF0033;
+}
+
+.list-container .compass {
+    background: #CCFFFF;
+}
+
+.list-container .gyro {
+    background: #FFFF99;
+}
+
+.list-container .gps {
+    background: #FFCCCC;
+}
+
+.list-container .shock {
+    background: #000000;
+}
+
+.list-container .list-item>image {
+    width: 200rpx;
+    flex: 0 0 200rpx;
+}
+
+.list-container .list-item .content {
+    flex: 1;
+    padding-left: 20rpx;
+}
+
+.list-container .list-item .content .index-title {
+    color: #ffffff;
+    line-height: 2em;
+}
+
+.list-container .list-item .content .btn-container {
+    display: flex;
+}
+
+.list-container .list-item .content .btn-container .btn {
+    padding: 10rpx;
+    font-size: 28rpx;
+    margin: 10rpx;
+    border-width: 1rpx;
+    border-style: solid;
+}
+
+.list-container .list-item .content .btn-container .btn.m {
+    color: #81D8D0;
+    border-color: #81D8D0;
+}
+
+.list-container .list-item .content .btn-container .btn.b {
+    color: #62B9F4;
+    border-color: #62B9F4;
+}
+
+.list-container .list-item .content .btn-container .btn.y {
+    color: #FFC82C;
+    border-color: #FFC82C;
+}
+
+.list-container .list-item .content .btn-container .btn.o {
+    color: #FF865C;
+    border-color: #FF865C;
+}
+
+.list-container .list-item .content .btn-container .btn.w {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}

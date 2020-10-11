@@ -1,0 +1,109 @@
+/* pages/wifi/wifi.wxss */
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 40rpx;
+    display: block;
+    text-align: left;
+}
+
+.ruff-tips {
+    font-size: 60rpx;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ruff-tips .info {
+    color: rgb(89, 89, 248);
+}
+
+.ruff-tips .warn {
+    color: rgb(255, 223, 41);
+}
+
+.ruff-tips .cancel {
+    color: rgb(255, 94, 0);
+}
+
+.ruff-scroll-container {
+    border: 1rxp solid #fafafa;
+    border-radius: 10rpx;
+}
+
+.ruff-scroll {
+    height: 800rpx;
+}
+
+.ruff-scroll .scroll-view-item {
+    position: relative;
+    padding: 20rpx 0rpx;
+    border-top: 1rpx solid #fafafa;
+}
+
+.ruff-scroll .scroll-view-item:last-child {
+    border-bottom: 1rpx solid #fafafa;
+}
+
+.ruff-scroll .scroll-view-item view>image {
+    width: 30rpx;
+    height: 30rpx;
+    margin: 0 10rpx;
+}
+
+.ruff-scroll .scroll-view-item>image {
+    top: 36rpx;
+    right: 20rpx;
+    width: 60rpx;
+    height: 60rpx;
+    position: absolute;
+}
+
+.ruff-scroll .scroll-view-item text {
+    margin: 0 10rpx;
+}
+
+.ruff-scroll .scroll-view-item .slight {
+    color: #cccccc;
+}
+
+.ruff-scroll .no-wifi {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wifi-info {
+    padding: 20rpx;
+    margin: 30rpx 0;
+    border-radius: 10rpx;
+    background-color: #fafafa;
+}
+
+.wifi-info>view {
+    margin: 10rpx 0rpx;
+}
+
+.wifi-info>view:last-child {
+    margin: none;
+}
+
+.wifi-info image {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.wifi-info text {
+    color: #cccccc;
+    margin: 0 10rpx;
+    padding-top: 4rpx;
+}
+
+.wifi-info .slight {
+    color: #cccccc;
+}

@@ -1,0 +1,8 @@
+function getOneQuarter(v) {
+    return v / 25;
+}
+
+module.exports = {
+    getOneQuarter: getOneQuarter,
+    a: 'hello'
+}

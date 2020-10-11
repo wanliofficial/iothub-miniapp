@@ -1,0 +1,28 @@
+<view class="ruff-container">
+    <view class='mdns-list'>
+        <view wx:for="{{lists}}" wx:key="{{index}}" class='row'>
+            <text class='ruff-color-o'>设备服务名：{{item.serviceName}}</text>
+            <text class='ruff-slight-color'>ip地址：{{item.ip}}:{{item.port}}</text>
+            <text class='ruff-slight-color'>当前服务类型：{{item.serviceType}}</text>
+        </view>
+    </view>
+    <view wx:if="{{lists.length == 0 && resolveFailList.length == 0}}" class="ruff-no-device">
+        <view>
+            <image class="ruff-brand-gray" src="https://statics.wanliwuhan.com/images/ruff/ruff-02.jpg"></image>
+        </view>
+        <text class="ruff-font-size-16 ruff-slight-color">{{tips}}</text>
+    </view>
+    <view class="dividing-line ruff-font-size-14 ruff-color-o">以下为解析失败的服务设备</view>
+    <view class='mdns-list'>
+        <view wx:for="{{resolveFailList}}" wx:key="{{index}}" class='row'>
+            <text class='ruff-color-o'>设备服务名：{{item.serviceName}}</text>
+            <text class='ruff-slight-color'>连接服务类型：{{item.serviceType}}</text>
+        </view>
+    </view>
+    <button class="ruff-button ruff-bgcolor-o ruff-font-size-18" bindtap='startDiscovery'>
+        开始搜索
+    </button>
+    <button class="ruff-button ruff-bgcolor-o ruff-font-size-18" bindtap='stopDiscovery'>
+        停止搜索
+    </button>
+</view>

@@ -1,0 +1,76 @@
+page {
+    background-color: #f6f6f6;
+}
+
+.list-container {
+    margin: 20rpx;
+}
+
+.list-item-wrap {
+    width: 100%;
+    height: 320rpx;
+    color: #f0f0f0;
+    border-radius: 20rpx;
+    display: flex;
+    margin-bottom: 30rpx;
+    align-items: flex-end;
+    align-content: flex-end;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    box-shadow: 0px 3px 32px 0px rgba(230,230,230,1);
+}
+
+.list-item-text {
+    width: 100%;
+    padding: 10rpx 16rpx;
+    font-size: 28rpx;
+    border-bottom-left-radius: 20rpx;
+    border-bottom-right-radius: 20rpx;
+    background: rgba(20, 20, 20, 0.562)
+}
+
+.device-card {
+    width: 94%;
+    display: flex;
+    box-shadow: 0 0 10rpx 5rpx #f0f0f0;
+    border-radius: 10rpx;
+    margin: 40rpx auto;
+    background: #ffffff;
+}
+
+.device-card>view:first-child {
+    flex: 0 0 200rpx;
+}
+
+.device-card>view:first-child image {
+    display: block;
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 10rpx;
+}
+
+.device-card>view:last-child {
+    flex: 1;
+    padding: 10rpx;
+    font-size: 28rpx;
+    word-break: break-all;
+}
+
+.device-card>view .main-info {
+    font-size: 32rpx;
+    font-weight: bolder;
+}
+
+.device-card>view .main-info text {
+    padding: 0rpx 6rpx;
+}
+
+.device-card>view .device-no {
+    margin-top: 20rpx;
+}
+
+.device-card>view .ipv6 {
+    margin-top: 2rpx;
+}

@@ -1,0 +1,2 @@
+<view class="inner">{{innerText}}</view>
+<slot></slot>

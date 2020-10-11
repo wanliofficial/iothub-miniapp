@@ -1,0 +1,31 @@
+<view class="ruff-container">
+  <view wx:if="{{isMyslefShow}}" class="ruff-notice current-device">
+    <view>{{connectedDevice.name ? connectedDevice.name : '未命名设备'}}</view>
+    <view class="ruff-font-size-15">MAC地址：{{connectedDevice.deviceId}}</view>
+    <button class="ruff-button ruff-bgcolor-w" bindtap="openModal">发送指令</button>
+    <view wx:if="{{result}}" class="ruff-font-size-16 ruff-bgcolor-o">{{result}}</view>
+  </view>
+  <block wx:if="{{list}}">
+    <view>设备列表</view>
+    <view class="device-card" wx:for="{{list}}" wx:for-item="item" wx:key="{{item.deviceId}}">
+      <view class="device-name">{{ item.name ? item.name : item.localName ? item.localName : '无名设备' }} ------- 信号强度：{{item.RSSI}}</view>
+      <view class="device-mac ruff-slight-color">MAC地址：{{item.deviceId}}</view>
+      <view class="device-btn ruff-bgcolor-b ruff-font-size-15" data-id="{{item.deviceId}}" bindtap="connectDevice">连接设备</view>
+    </view>
+    <button class="ruff-button ruff-bgcolor-b" bindtap="closeBlueteeth">关闭WIFI</button>
+  </block>
+  <view wx:else class="ruff-no-device">
+    <view>
+      <image class="ruff-brand-gray" src="https://statics.wanliwuhan.com/images/ruff/ruff-02.jpg"></image>
+    </view>
+    <text class="ruff-font-size-16" style="color: #cccccc;">暂未发现设备</text>
+  </view>
+</view>
+<modal isShow="{{isModalShow}}">
+  <view style="width: 90%;">
+    <view class="form-section">
+      <textarea class="ruff-textarea ruff-font-size-18" focus="{{false}}" placeholder="请输入16进制指令" bindinput="textInput" bindblur="textBlur"></textarea>
+      <button class="ruff-button ruff-bgcolor-m ruff-font-size-18" bindtap="sendInstruction">发送指令</button>
+    </view>
+  </view>
+</modal>

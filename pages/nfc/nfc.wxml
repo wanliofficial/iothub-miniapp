@@ -1,0 +1,15 @@
+<view class="ruff-notice ruff-font-size-15">目前只支持HCE模式</view>
+<view class="ruff-container">
+    <view>
+        当前设备是否支持NFC功能：
+        <text class="ruff-color-y">{{nfc ? '支持':'不支持'}}</text>
+    </view>
+    <view class="ruff-font-size-16" style="color: #cccccc;">
+        说明：腾讯官方开放给小程序NFC的接口并不多，而且小程序只能被动接收指令，不能主动发出指令。在开发过程中，发现官方文档解释不清不楚，比如需要一个aid_list参数，但是没有说明这个参数代表什么意思，又从哪里去获取，官方文档提供一个值【F222222222】,程序默认也是这个值，如果你知道什么意思，并且能获取到，那么请手动输入。即使是获取到，也不能保证就一定能够通讯，究其原因，感觉小程序团队对这个接口还没准备好怎么做，小程序官方社区没有一个开发者成功应用该API，所以这里，只做DEMO展示。
+    </view>
+    <input type="text" class="ruff-input" style="background: yellow;" bindinput="aidInput" bindblur="aidBlur" placeholder="请输入aid,多个以英文逗号分隔" />
+    <button class="ruff-button ruff-bgcolor-y ruff-font-size-18" bindtap="startNFC">打开NFC</button>
+    <button wx:if="{{stopBtnShow}}" class="ruff-button ruff-bgcolor-y ruff-font-size-18" bindtap="stopNFC">
+        关闭NFC
+    </button>
+</view>

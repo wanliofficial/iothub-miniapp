@@ -1,0 +1,11 @@
+<!-- index.wxml -->
+<view class="container index">
+    <view class="ruff-section">
+        <view class="ruff-slogan">软件定义硬件</view>
+        <view class="ruff-desc">支持 JavaScript 开发应用的物联网操作系统</view>
+        <navigator url="/pages/ruff/ruff" class="ruff-begin-btn">💙 起步走</navigator>
+    </view>
+    
+    <image src="https://statics.wanliwuhan.com/svgs/20190110/ruff-web-index-banner.svg" mode="scaleToFill" lazy-load="false"></image>
+    <image src="https://statics.wanliwuhan.com/images/20190110/ruff-code.png" mode="widthFix" lazy-load="false"></image>
+</view>

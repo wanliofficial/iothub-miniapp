@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/nfc/nfc",
+    "pages/buy/buy",
+    "pages/mdns/mdns",
+    "pages/iot/iot",
+    "pages/wifi/wifi",
+    "pages/ruff/ruff",
+    "pages/login/login",
+    "pages/sensor/sensor",
+    "pages/scenes/scenes",
+    "pages/detail/detail",
+    "pages/device/device",
+    "pages/device-list/index",
+    "pages/profile/profile",
+    "pages/contact/contact",
+    "pages/data-list/data-list",
+    "pages/blueteeth/blueteeth"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "Ruff IOT",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ddd",
+    "selectedColor": "#00b1b5",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./images/rocket-icon.png",
+        "selectedIconPath": "./images/rocket-icon-light.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/scenes/scenes",
+        "iconPath": "./images/scenes-icon.png",
+        "selectedIconPath": "./images/scenes-icon-light.png",
+        "text": "场景"
+      },
+      {
+        "pagePath": "pages/device-list/index",
+        "iconPath": "./images/device-icon.png",
+        "selectedIconPath": "./images/device-icon-light.png",
+        "text": "设备"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "./images/profile-icon.png",
+        "selectedIconPath": "./images/profile-icon-light.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,49 @@
+<view class="buy-container">
+    <view class="ruff-font-bold ruff-font-size-18">包装清单</view>
+</view>
+<rich-text nodes="{{inventory}}" bindtap="tap"></rich-text>
+<view class="buy-container">
+    <view class="ruff-font-bold ruff-font-size-18">赠品清单</view>
+</view>
+<rich-text nodes="{{gifts}}" bindtap="tap"></rich-text>
+<view class="buy-container">
+    <view class="ruff-font-bold ruff-font-size-18">开发板功能区</view>
+</view>
+<image class="ruff-img" src="{{imgList[0]}}" mode="widthFix"></image>
+<view class="buy-container">
+    <view class="ruff-font-bold ruff-font-size-18">组装</view>
+    <view class="ruff-font-size-15">为了防止短路，我们配了四个垫脚铜柱，请把四个铜柱置于板子下面并用螺丝固定。</view>
+    <view class="ruff-font-bold ruff-font-size-18">上电使用</view>
+    <view class="ruff-font-size-15">请将包装内的 Micro USB 线一端连接开发板另一端连接电脑或者其他5V 供电电源。开发板上电即用。启动过程请参考下面的指示灯说明。</view>
+    <view class="ruff-font-size-15">请务必保证开发板下无金属物体，防止短路损坏开发板。</view>
+    <view class="ruff-font-size-15">除此之外，我们还提供了12V 供电接口，根据你的需要请自行采购电源适配器（12V 1A 3.5 * 2.1 内正外负）。</view>
+</view>
+<view class="buy-container">
+    <view class="ruff-font-bold ruff-font-size-18">指示灯说明</view>
+</view>
+<rich-text nodes="{{pilotlamp}}" bindtap="tap"></rich-text>
+<view class="buy-container">
+    <view class="ruff-font-bold ruff-font-size-18">按键说明</view>
+</view>
+<rich-text nodes="{{buttons}}" bindtap="tap"></rich-text>
+<view class="buy-container">
+    <view class="ruff-font-size-15" style="color: #F7865C;">POWER: 功能按键 id: button-k2 可以由开发者自定义功能</view>
+    <view class="ruff-font-size-15" style="color: #F7865C;">FUNC: 功能按键 id: button-k3 可以由开发者自定义功能</view>
+</view>
+<view class="buy-container">
+    <view class="ruff-font-bold ruff-font-size-18">接口说明</view>
+</view>
+<image class="ruff-img" src="{{imgList[1]}}" mode="widthFix"></image>
+<view class="buy-container">
+    <view class="ruff-font-bold ruff-font-size-18">P1</view>
+</view>
+<rich-text nodes="{{p1List}}" bindtap="tap"></rich-text>
+<view class="buy-container">
+    <view class="ruff-font-bold ruff-font-size-18">P2</view>
+</view>
+<rich-text nodes="{{p2List}}" bindtap="tap"></rich-text>
+<view class="buy-container">
+    <view class="ruff-font-bold ruff-font-size-18">都看到这儿啦，来一块？</view>
+    <image class="ruff-img" src="{{imgList[2]}}" data-url="{{imgList[2]}}" bindtap="previewImg" mode="widthFix" />
+    <view>购买链接：<text selectable="true">https://shop154924108.taobao.com/</text></view>
+</view>

@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#00b1b5",
+    "navigationBarTitleText": "WIFI",
+    "usingComponents": {
+        "modal": "../../components/modal/modal"
+    }
+}

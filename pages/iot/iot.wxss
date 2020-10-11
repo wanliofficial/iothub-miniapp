@@ -1,0 +1,46 @@
+.header {
+    padding: 200rpx;
+    background-size: 50% 50%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: url('https://statics.wanliwuhan.com/images/ruff/iot-index-banner.jpg');
+}
+
+.product-img {
+    width: 300rpx;
+    height: auto;
+    display: block;
+    margin: 20rpx auto;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand-container .brand-item {
+    width: 50%;
+    flex: 0 0 50%;
+    margin: 40rpx 0rpx;
+    box-sizing: border-box;
+}
+
+.brand-container .brand-item:nth-child(odd) {
+    padding-right: 0.5rpx;
+}
+
+.brand-container .brand-item:nth-child(even) {
+    padding-left: 0.5rpx;
+}
+
+.brand-container .brand-item image {
+    width: 100%;
+    height: 160rpx;
+}
+
+.padding-both-sides {
+    padding: 0 20px;
+}

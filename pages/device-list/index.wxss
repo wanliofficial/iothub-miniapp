@@ -1,0 +1,181 @@
+page {
+    position: relative;
+    background: #F5F5F5;
+}
+
+.navi-cls {
+    margin-bottom: 20rpx;
+}
+
+.color-picker-mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background: transparent;
+}
+
+.swiper-container {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50rpx;
+    padding: 0 10px;
+    position: fixed;
+    z-index: 3000;
+    background: #faff72;
+}
+  
+.swiper-item {
+    color: #ff7500;
+    font-size: 25rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    line-height: 50rpx;
+}
+
+.loading-warp {
+    z-index: 0;
+    position: relative;
+    margin: 20rpx auto;
+    width: 110px;
+    height: 110px;
+}
+.canvas {
+    z-index: 1;
+    width: 110px;
+    height: 110px;
+}
+.canvas-mask {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+}
+.rate {
+    left: 0;
+    top: 30px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    color: #00b1b5;
+    font-size: 40rpx;
+}
+.loading-tips {
+    text-align: center;
+    font-size: 40rpx;
+    font-weight: 400;
+    color: #fff;
+}
+
+.online-count {
+    right: 10px;
+    bottom: 10px;
+    padding: 5px;
+    color: #00b1b5;
+    position: absolute;
+    display: inline-block;
+    border-radius: 10rpx;
+    border: 1rpx solid #00b1b5;
+}
+
+.device-card {
+    display: flex;
+}
+
+.device-card .item {
+    width: 50%;
+    flex: 0 0 50%;
+}
+
+.device-info {
+    display: block;
+    padding: 20rpx;
+    position: relative;
+    margin: 50rpx 0rpx 20rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    box-shadow: 0 0 10rpx 10rpx #eee;
+}
+
+.live-tips {
+    padding: 20rpx;
+    color: #ffffff;
+    border-radius: 10rpx;
+    background: #f36838;
+    word-wrap: break-word;
+}
+
+.sensor-card {
+    display: flex;
+    height: 100px;
+    margin-top: 20rpx;
+    background: #ffffff;
+    box-shadow:  0 0 10rpx 10rpx #eee;
+    border: 1rpx solid #ccc;
+}
+
+.sensor-card .picture {
+    width: 100px;
+    height: 100px;
+    flex: 0 0 100px;
+    display: block;
+}
+
+.sensor-card .content {
+    flex: 1;
+    padding: 20rpx;
+    position: relative;
+}
+
+.sensor-card .content .picker-color {
+    color: #f36838;
+    text-decoration: underline;
+}
+
+.sensor-card .color-picker-container {
+    padding: 20rpx;
+    z-index: 2000;
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0 0 15rpx 8rpx #aaa;
+}
+
+.sensor-card .color-picker-container .close-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0px 0px 10px 0px;
+    display: block;
+    position: relative;
+}
+
+.sensor-card .content .text .control-btn {
+    padding: 10rpx;
+    color: #00b1b5;
+    font-size: 20rpx;
+    border-radius: 10rpx;
+    display: inline-block;
+    background: #81D8D0;
+    margin: 10rpx 20rpx 10rpx 0rpx;
+}
+
+.sensor-card .content .text .control-btn:last-child {
+    margin-right: 0;
+}
+
+.sensor-card .content .text .control-input {
+    font-size: 24rpx;
+    display: block;
+    margin: 10rpx 0rpx;
+    padding: 0rpx 10rpx;
+    border: 1rpx solid #00b1b5;
+}

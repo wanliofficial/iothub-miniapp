@@ -1,0 +1,47 @@
+<e-title-view title='历史数据'>环境采集数据</e-title-view>
+<scroll-view scroll-x="true" style="width: 100%;height: 650rpx;">
+    <view class="scroll-view-title">
+        <label style="width: 380rpx;">时间</label>
+        <label style="width: 160rpx;">温度</label>
+        <label style="width: 140rpx;">相对湿度</label>
+        <label style="width: 140rpx;">光照</label>
+    </view>
+    <view class="scroll-view-item" wx:for="{{edcs}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+        <text style="width: 380rpx;">{{ item.time }}</text>
+        <text style="width: 160rpx;">{{ item.temperature }}</text>
+        <text style="width: 140rpx;">{{ item.humidity }}</text>
+        <text style="width: 140rpx;">{{ item.illuminance }}</text>
+    </view>
+</scroll-view>
+<view class="ruff-footer">
+    <view class="ruff-footer-prev {{ prev0 ? '' : 'ruff-slight-color' }}" bindtap="getPrevPageData0">上一页</view>
+    <view class="ruff-footer-time">当前页码：{{current0}}，总条数：{{count0}}</view>
+    <view class="ruff-footer-next {{ next0 ? '' : 'ruff-slight-color' }}" bindtap="getNextPageData0">下一页</view>
+</view>
+
+<e-title-view title='历史数据'>开发板运行数据</e-title-view>
+<scroll-view scroll-x="true" style="width: 100%;height: 650rpx;">
+    <view class="scroll-view-title">
+        <label style="width: 380rpx;">时间</label>
+        <label style="width: 160rpx;">空余内存</label>
+        <label style="width: 120rpx;">总内存</label>
+        <label style="width: 140rpx;">运行时间</label>
+        <label style="width: 170rpx;">1分钟负载</label>
+        <label style="width: 170rpx;">5分钟负载</label>
+        <label style="width: 180rpx;">15分钟负载</label>
+    </view>
+    <view class="scroll-view-item" wx:for="{{operations}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+        <text style="width: 380rpx;">{{ item.time }}</text>
+        <text style="width: 160rpx;">{{ item.freemem }}</text>
+        <text style="width: 120rpx;">{{ item.totalmem }}</text>
+        <text style="width: 140rpx;">{{ item.uptime }}</text>
+        <text style="width: 170rpx;">{{ item.load1 }}</text>
+        <text style="width: 170rpx;">{{ item.load5 }}</text>
+        <text style="width: 180rpx;">{{ item.load15 }}</text>
+    </view>
+</scroll-view>
+<view class="ruff-footer">
+    <view class="ruff-footer-prev {{ prev1 ? '' : 'ruff-slight-color' }}" bindtap="getPrevPageData1">上一页</view>
+    <view class="ruff-footer-time">当前页码：{{current1}}，总条数：{{count1}}</view>
+    <view class="ruff-footer-next {{ next1 ? '' : 'ruff-slight-color' }}" bindtap="getNextPageData1">下一页</view>
+</view>

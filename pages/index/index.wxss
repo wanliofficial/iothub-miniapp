@@ -1,0 +1,50 @@
+/**index.wxss**/
+
+page {
+    height: 100%;
+}
+
+.index {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(105deg, #117B91, #7CFED6);
+}
+
+.ruff-section {
+    width: 80%;
+    margin: 60rpx auto;
+}
+
+.ruff-section .ruff-slogan {
+    color: #ffffff;
+    font-size: 80rpx;
+}
+
+.ruff-section .ruff-desc {
+    color: #ffffff;
+    font-size: 25rpx;
+}
+
+.ruff-section .ruff-begin-btn {
+    width: 240rpx;
+    height: 40rpx;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 30rpx;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20rpx;
+    color: #00b1b5;
+}
